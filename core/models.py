@@ -13,8 +13,8 @@ class Movie(models.Model):
     description = models.TextField()
     release_date = models.DateField()
     genres = models.ManyToManyField(Genre)
-    thumbnail = models.ImageField(upload_to='thumbnails/')
-    video_file = models.FileField(upload_to='movies/')
+    thumbnail = models.URLField(blank=True)
+    video_file = models.URLField(blank=True)
     uuid = models.UUIDField(default=uuid.uuid4, unique=True)
     
     def __str__(self):
