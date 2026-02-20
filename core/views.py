@@ -17,7 +17,7 @@ class ProfileViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         # Only return profiles belonging to the logged-in user
-        return Profile.objects.filter(user=request.user)
+        return Profile.objects.filter(user=self.request.user)
 
     def perform_create(self, serializer):
         # Automatically attach the profile to the current user
