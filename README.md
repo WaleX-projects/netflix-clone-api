@@ -17,8 +17,8 @@ Welcome to the Netflix Clone API project! This repository contains the backend A
 To get started with the Netflix Clone API, you need to clone this repository and install the required dependencies.
 
 ### Prerequisites
-- [Python3](/) (v3.13)
-- [npm](https://www.npmjs.com/) (v6 or later)
+- [Python3]() (v3.13)
+- [django]() (v6 or later)
 
 ### Installation
 
